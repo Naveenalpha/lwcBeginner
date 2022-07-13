@@ -1,10 +1,26 @@
 <template>
-    <div>
+    
+    <div class="slds-card">
+        <div class="slds-m-around_large">
+            <div>
         { fullname }
         { obj.name }
     </div>
-    <div class="slds-card">
-        <lightning-input type="text" label="Enter course" onkeyup={handler}></lightning-input>
-        
+            <lightning-input type="text" label="Enter course" onkeyup={handler}></lightning-input>
+        </div>
     </div>
+
+    <div class="slds-card">
+        <div class="slds-m-around_large">
+            Your City is <b>{address.city}</b>
+            <lightning-input type="text" label="Enter city" onkeyup={cityhandler}></lightning-input>
+        </div>
+    </div>
+
+<lightning-card title="Getter Demo">
+    <div class="slds-m-around_medium">
+        The first user is {firstUser}
+        Multiply of {num1} and {num2} is {multiplyValue}
+    </div>
+</lightning-card>
 </template>

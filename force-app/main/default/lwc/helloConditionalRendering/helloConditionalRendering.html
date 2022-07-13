@@ -1,0 +1,18 @@
+<template>
+    <lightning-button 
+    variant="brand" label="Click to show" title="Primary action" 
+    onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+    <template if:true={isVisible}>
+    <div>
+        You opened me
+    </div>
+    
+    </template>
+
+    <lightning-input type="text" label="Enter Hello" placeholder="type here..." onkeyup={handleKey}></lightning-input>
+    <template if:true={isShown}>
+        Hurray!!! You typed correctly
+    </template>
+
+</template>
